@@ -1,0 +1,4 @@
+listener
+output.log
+.bash_history
+*.pyc

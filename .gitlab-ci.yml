@@ -1,0 +1,11 @@
+image:
+  name: python:latest # don't change this
+ipc-project:
+  stage: test
+  script:
+    - make
+    - chmod +x test_*
+    - ./test_cat.sh
+    - ./test_cat_exploit.sh
+    - ./test_listener.sh
+    - ./test_full_dd.sh
